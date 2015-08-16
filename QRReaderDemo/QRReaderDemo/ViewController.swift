@@ -107,8 +107,8 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
         let alertPrompt = UIAlertController(title: "Open App", message: "You're going to open \(decodedURL)", preferredStyle: .ActionSheet)
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
             
-            if let url = NSURL(string: decodedURL) {
-                let actionSheetController: UIAlertController = UIAlertController(title: "Alert", message: "Swiftly Now! Choose an option!", preferredStyle: .Alert)
+            if let url = NSString(UTF8String: decodedURL) {
+                let actionSheetController: UIAlertController = UIAlertController(title: "Success!", message: "How much bitcoin would you like to send?", preferredStyle: .Alert)
                 
                 //Create and add the Cancel action
                 let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
