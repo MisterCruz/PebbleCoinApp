@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         actionSheetController.addAction(choosePictureAction)
         
         //We need to provide a popover sourceView when using it on iPad
-        actionSheetController.popoverPresentationController?.sourceView = sender as UIView;
+        actionSheetController.popoverPresentationController?.sourceView = sender as! UIView;
         
         //Present the AlertController
         self.presentViewController(actionSheetController, animated: true, completion: nil)
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         //Create and an option action
         let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .Default) { action -> Void in
             //Do some other stuff
+            
         }
         actionSheetController.addAction(nextAction)
         //Add a text field
