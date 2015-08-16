@@ -118,7 +118,19 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
                 //Create and an option action
                 let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .Default) { action -> Void in
                     //Do some other stuff
+                    if (url.length > 20){
+                    let alertController = UIAlertController(title: "Sent!", message:
+                        "The information has been sent to your Pebble!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                     
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    }else{
+                        let alertController = UIAlertController(title: "Error", message:
+                            "We had trouble indentifying the image as a valid bitcoin public key, please try again", preferredStyle: UIAlertControllerStyle.Alert)
+                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                    }
                 }
                 actionSheetController.addAction(nextAction)
                 //Add a text field
