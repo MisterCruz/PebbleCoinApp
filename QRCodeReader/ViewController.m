@@ -60,7 +60,7 @@
         // In this case the app is currently reading a QR code and it should stop doing so.
         [self stopReading];
         // The bar button item's title should change again.
-        [_bbitemStart setTitle:@"Start!"];
+        [_bbitemStart setTitle:@"Repeat!"];
     }
     
     // Set to the flag the exact opposite value of the one that currently has.
@@ -118,11 +118,12 @@
 
 -(void)stopReading{
     // Stop video capture and make the capture session object nil.
+    
     [_captureSession stopRunning];
     _captureSession = nil;
     
     // Remove the video preview layer from the viewPreview view's layer.
-    [_videoPreviewLayer removeFromSuperlayer];
+    //[_videoPreviewLayer removeFromSuperlayer];
 }
 
 
