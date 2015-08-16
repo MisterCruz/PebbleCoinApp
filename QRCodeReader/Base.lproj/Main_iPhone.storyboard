@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kz6-mH-m5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="404"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on Start! to read a QR Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-mo-RIh">
-                                        <rect key="frame" x="17" y="164" width="247" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on Start to Begin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-mo-RIh">
+                                        <rect key="frame" x="37" y="149" width="247" height="78"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -41,11 +41,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="3ov-gE-VIL"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QR Code Reader is not yet running..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-nR-8RI">
-                                <rect key="frame" x="0.0" y="405" width="320" height="88"/>
-                                <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QR Code Reader is not yet running..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-nR-8RI">
+                                <rect key="frame" x="0.0" y="467" width="320" height="57"/>
+                                <color key="backgroundColor" red="0.87832496279761907" green="0.87832496279761907" blue="0.87832496279761907" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.35137345528809527" green="0.35137345528809527" blue="0.35137345528809527" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

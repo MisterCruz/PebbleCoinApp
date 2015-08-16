@@ -54,6 +54,7 @@
             // running, then change the start button title and the status message.
             [_bbitemStart setTitle:@"Stop"];
             [_lblStatus setText:@"Scanning for QR Code..."];
+            //[self end];
         }
     }
     else{
@@ -119,17 +120,31 @@
 -(void)stopReading{
     // Stop video capture and make the capture session object nil.
     
+    //[_captureSession stopRunning];
+    //_captureSession = nil;
+    
+    // Remove the video preview layer from the viewPreview view's layer.
+    //[_videoPreviewLayer removeFromSuperlayer];
+    double delayInSeconds = 5.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        NSLog(@"Do some work");
+    });
+}
+-(void)end{
+    // Stop video capture and make the capture session object nil.
+    
     [_captureSession stopRunning];
     _captureSession = nil;
     
     // Remove the video preview layer from the viewPreview view's layer.
-    //[_videoPreviewLayer removeFromSuperlayer];
+    [_videoPreviewLayer removeFromSuperlayer];
 }
 
 
 -(void)loadBeepSound{
     // Get the path to the beep.mp3 file and convert it to a NSURL object.
-    NSString *beepFilePath = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"mp3"];
+    /*NSString *beepFilePath = [[NSBundle mainBundle] pathForResource:@"beep" ofType:@"mp3"];
     NSURL *beepURL = [NSURL URLWithString:beepFilePath];
 
     NSError *error;
@@ -144,7 +159,7 @@
     else{
         // If the audio player was successfully initialized then load it in memory.
         [_audioPlayer prepareToPlay];
-    }
+    }*/
 }
 
 
@@ -163,8 +178,8 @@
             [_lblStatus performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-            [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
-
+            [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"scanning" waitUntilDone:NO];
+            
             _isReading = NO;
             
             // If the audio player is not nil, then play the sound effect.
