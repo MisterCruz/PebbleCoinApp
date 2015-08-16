@@ -35,6 +35,7 @@
     
     // Begin loading the sound effect so to have it ready for playback when it's needed.
     [self loadBeepSound];
+    [self startStopReading:self];
 }
 
 - (void)didReceiveMemoryWarning
