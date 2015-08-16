@@ -10,25 +10,26 @@
 #import <PebbleKit/PebbleKit.h>
 
 @implementation NSString (senddata)
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    /* ... */
-    
-    [[PBPebbleCentral defaultCentral] setDelegate:self];
-    
-    /* ... */
-}
 
-- (void)pebbleCentral:(PBPebbleCentral*)central watchDidConnect:(PBWatch*)watch isNew:(BOOL)isNew {
-    NSLog(@"Pebble connected: %@", [watch name]);
-    self.connectedWatch = watch;
-}
-
-- (void)pebbleCentral:(PBPebbleCentral*)central watchDidDisconnect:(PBWatch*)watch {
-    NSLog(@"Pebble disconnected: %@", [watch name]);
-    
-    if (self.connectedWatch == watch || [watch isEqual:self.connectedWatch]) {
-        self.connectedWatch = nil;
-    }
-}
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    /* ... */
+//    
+//    [[PBPebbleCentral defaultCentral] setDelegate:self];
+//    
+//    /* ... */
+//}
+//
+//- (void)pebbleCentral:(PBPebbleCentral*)central watchDidConnect:(PBWatch*)watch isNew:(BOOL)isNew {
+//    NSLog(@"Pebble connected: %@", [watch name]);
+//    self.connectedWatch = watch;
+//}
+//
+//- (void)pebbleCentral:(PBPebbleCentral*)central watchDidDisconnect:(PBWatch*)watch {
+//    NSLog(@"Pebble disconnected: %@", [watch name]);
+//    
+//    if (self.connectedWatch == watch || [watch isEqual:self.connectedWatch]) {
+//        self.connectedWatch = nil;
+//    }
+//}
 @end
