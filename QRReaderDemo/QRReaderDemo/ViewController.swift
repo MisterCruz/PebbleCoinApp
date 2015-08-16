@@ -108,10 +108,13 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
             
             if let url = NSURL(string: decodedURL) {
+                /*
                 if UIApplication.sharedApplication().canOpenURL(url) {
+                    
                     UIApplication.sharedApplication().openURL(url)
                 }
-            }
+                */
+                self.performSegueWithIdentifier("payment", sender: self)            }
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         
