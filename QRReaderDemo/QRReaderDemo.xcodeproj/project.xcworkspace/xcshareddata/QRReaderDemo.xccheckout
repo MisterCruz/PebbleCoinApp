@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C57EC63-EC1A-401F-B55C-6FFBE1AF2107</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QRReaderDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</key>
+		<string>https://github.com/MisterCruz/PebbleCoinApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QRReaderDemo/QRReaderDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MisterCruz/PebbleCoinApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PebbleCoinApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

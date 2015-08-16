@@ -40,7 +40,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         // Initialize the captureSession object.
         captureSession = AVCaptureSession()
         // Set the input device on the capture session.
-        captureSession?.addInput(input as! AVCaptureInput)
+        captureSession?.addInput(input as AVCaptureInput)
         
         // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
         let captureMetadataOutput = AVCaptureMetadataOutput()
@@ -85,14 +85,14 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
     }
         
     // Get the metadata object.
-    let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
+    let metadataObj = metadataObjects[0] as AVMetadataMachineReadableCodeObject
     
     // Here we use filter method to check if the type of metadataObj is supported
     // Instead of hardcoding the AVMetadataObjectTypeQRCode, we check if the type
     // can be found in the array of supported bar codes.
     if supportedBarCodes.filter({ $0 == metadataObj.type }).count > 0 {
         // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
-        let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
+        let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as AVMetadataMachineReadableCodeObject
         qrCodeFrameView?.frame = barCodeObject.bounds
         
         if metadataObj.stringValue != nil {
@@ -100,6 +100,7 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
             launchApp(metadataObj.stringValue)
         }
     }
+  //  performSegueWithIdentifier(_, identifier: String?, sender, sender:  AnyObject?)
 }
     
     func launchApp(decodedURL: String) {
