@@ -104,11 +104,11 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
 }
     
     func launchApp(decodedURL: String) {
-        let alertPrompt = UIAlertController(title: "Open App", message: "You're going to open \(decodedURL)", preferredStyle: .ActionSheet)
+        let alertPrompt = UIAlertController(title: "Confirm Scan", message: "Would you like to send money to \(decodedURL)", preferredStyle: .ActionSheet)
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
             
             if let url = NSString(UTF8String: decodedURL) {
-                let actionSheetController: UIAlertController = UIAlertController(title: "Success!", message: "How much bitcoin would you like to send?", preferredStyle: .Alert)
+                let actionSheetController: UIAlertController = UIAlertController(title: "Success!", message: "How much bitcoin would you like to send to \(decodedURL)?", preferredStyle: .Alert)
                 
                 //Create and add the Cancel action
                 let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PebbleKit/PebbleKit.h>
 
-@interface NSString (senddata)
-
+@interface senddata : UIViewController
+@property (strong) PBWatch *connectedWatch;
 @end
