@@ -108,13 +108,57 @@ func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects met
         let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
             
             if let url = NSURL(string: decodedURL) {
+                
+//                let alertController = UIAlertController(title: "iOScreator", message:
+//                    "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+//                
+//                self.presentViewController(alertController, animated: true, completion: nil)
+                /*func configurationTextField(textField: UITextField!)
+                {
+                    println("configurat hire the TextField")
+                    
+                    if let tField = textField {
+                        
+                        self.messageLabel = "textField!"
+                        //Save reference to the UITextField
+                        self.messageLabel.text = "Hello world"
+                    }
+                }
+                
+                
+                func handleCancel(alertView: UIAlertAction!)
+                {
+                    println("User click Cancel button")
+                    println(self.messageLabel.text)
+                }
+                
+                var alert = UIAlertController(title: "Alert Title", message: "Alert Message", preferredStyle: UIAlertControllerStyle.Alert)
+                
+                alert.addTextFieldWithConfigurationHandler(configurationTextField)
+                
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Cancel, handler:handleCancel))
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
+                    println("User click Ok button")
+                    println(self.messageLabel.text)
+                }))
+                self.presentViewController(alert, animated: true, completion: {
+                    println("completion block")
+                })
+                //prepareForSegue()
                 /*
                 if UIApplication.sharedApplication().canOpenURL(url) {
                     
                     UIApplication.sharedApplication().openURL(url)
                 }
                 */
-                self.performSegueWithIdentifier("payment", sender: self)            }
+                //self.performSegueWithIdentifier("payment", sender: self)            
+                 func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+                    if (segue.identifier == "thetransition") {
+                        // pass data to next view
+                    }
+                }*/
+            }
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         
