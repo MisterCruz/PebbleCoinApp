@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AEFD9B52A673CD6F8577D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4241C60D1B0B455D40280B55 /* libPods.a */; };
 		C0F2127F1845D0BB005DC125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2127E1845D0BB005DC125 /* Foundation.framework */; };
 		C0F212811845D0BB005DC125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F212801845D0BB005DC125 /* CoreGraphics.framework */; };
 		C0F212831845D0BB005DC125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F212821845D0BB005DC125 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		207DD4DCE11B64880385BD06 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4241C60D1B0B455D40280B55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F2127B1845D0BB005DC125 /* QRCodeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F2127E1845D0BB005DC125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0F212801845D0BB005DC125 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,6 +60,7 @@
 		C0F212AA1845D0BB005DC125 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0F212AC1845D0BB005DC125 /* QRCodeReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderTests.m; sourceTree = "<group>"; };
 		C0F212B618465CCB005DC125 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		D94EF35E8A7F46B30BA93743 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				C0F212811845D0BB005DC125 /* CoreGraphics.framework in Frameworks */,
 				C0F212831845D0BB005DC125 /* UIKit.framework in Frameworks */,
 				C0F2127F1845D0BB005DC125 /* Foundation.framework in Frameworks */,
+				45AEFD9B52A673CD6F8577D5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F4C9CF8739AF18C460B4368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				207DD4DCE11B64880385BD06 /* Pods.debug.xcconfig */,
+				D94EF35E8A7F46B30BA93743 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C0F212721845D0BB005DC125 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,7 @@
 				C0F212A61845D0BB005DC125 /* QRCodeReaderTests */,
 				C0F2127D1845D0BB005DC125 /* Frameworks */,
 				C0F2127C1845D0BB005DC125 /* Products */,
+				8F4C9CF8739AF18C460B4368 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,7 @@
 				C0F212801845D0BB005DC125 /* CoreGraphics.framework */,
 				C0F212821845D0BB005DC125 /* UIKit.framework */,
 				C0F212A01845D0BB005DC125 /* XCTest.framework */,
+				4241C60D1B0B455D40280B55 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F212B01845D0BB005DC125 /* Build configuration list for PBXNativeTarget "QRCodeReader" */;
 			buildPhases = (
+				BA6B696DE81906C54F466BC9 /* Check Pods Manifest.lock */,
 				C0F212771845D0BB005DC125 /* Sources */,
 				C0F212781845D0BB005DC125 /* Frameworks */,
 				C0F212791845D0BB005DC125 /* Resources */,
+				4C68D9CC5DED85EC52958D7D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +269,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C68D9CC5DED85EC52958D7D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6B696DE81906C54F466BC9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0F212771845D0BB005DC125 /* Sources */ = {
@@ -393,6 +444,7 @@
 		};
 		C0F212B11845D0BB005DC125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207DD4DCE11B64880385BD06 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -406,6 +458,7 @@
 		};
 		C0F212B21845D0BB005DC125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94EF35E8A7F46B30BA93743 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
