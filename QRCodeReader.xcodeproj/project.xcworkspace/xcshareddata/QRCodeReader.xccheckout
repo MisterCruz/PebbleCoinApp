@@ -5,24 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8C57EC63-EC1A-401F-B55C-6FFBE1AF2107</string>
+	<string>265F4118-628B-44DA-84F8-97E22B36262D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>QRCodeReader</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>06B2D07A2DE9E5CB6180073320694551499941D0</key>
-		<string>https://github.com/pebble/pebble-ios-sdk.git</string>
 		<key>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</key>
 		<string>https://github.com/MisterCruz/PebbleCoinApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QRReaderDemo/QRReaderDemo.xcodeproj/project.xcworkspace</string>
+	<string>QRCodeReader.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>06B2D07A2DE9E5CB6180073320694551499941D0</key>
-		<string>../../..pebble-ios-sdk/</string>
 		<key>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MisterCruz/PebbleCoinApp.git</string>
@@ -32,14 +28,6 @@
 	<string>0E4B269A0B3F09A4D926BA29B86F0CAE56BBED95</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>06B2D07A2DE9E5CB6180073320694551499941D0</string>
-			<key>IDESourceControlWCCName</key>
-			<string>pebble-ios-sdk</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
