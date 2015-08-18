@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QRReaderDemo/ViewController.swift"
+            timestampString = "461423388.003528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "captureOutput(_:didOutputMetadataObjects:fromConnection:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QRReaderDemo.ViewController.(captureOutput (QRReaderDemo.ViewController) -&gt; (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AVCaptureOutput&gt;, didOutputMetadataObjects : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Swift.AnyObject&gt;&gt;, fromConnection : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.AVCaptureConnection&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "QRReaderDemo"
+                  urlString = "file:///Users/tirumalasr/Desktop/PebbleCoinApp/QRReaderDemo/QRReaderDemo/ViewController.swift"
+                  timestampString = "461425383.431829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSString&gt;) -&gt; (@unowned Swift.Bool) to @callee_owned (@in Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSString&gt;) -&gt; (@unowned Swift.Bool)"
+                  moduleName = "QRReaderDemo"
+                  urlString = "file:///Users/tirumalasr/Desktop/PebbleCoinApp/QRReaderDemo/QRReaderDemo/ViewController.swift"
+                  timestampString = "461425383.432046"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QRReaderDemo/ViewController.swift"
+            timestampString = "461423564.832787"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QRReaderDemo/ViewController.swift"
+            timestampString = "461423566.764207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
